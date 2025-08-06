@@ -1,2 +1,10 @@
 # Assembly-OS-breaker
-run with cation will brick ur os only for educational purposes
+all will do is make an os and say hello world
+
+## How to run
+```bash
+nasm -f bin boot.asm -o boot.bin
+nasm -f bin kernel.asm -o kernel.bin
+cat boot.bin kernel.bin > os.img
+qemu-system-i386 -drive format=raw,file=os.img
+```
