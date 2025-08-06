@@ -1,6 +1,6 @@
 # Assembly-OS-breaker
 all will do is make an os and say hello world
-for x86
+for x86-32
 ## How to run
 ```bash
 nasm -f bin boot.asm -o boot.bin
